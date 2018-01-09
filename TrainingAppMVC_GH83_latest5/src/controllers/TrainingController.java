@@ -71,7 +71,7 @@ public class TrainingController {
 
 		if (trainingService.trainingExists(username, weekDay)) {
 
-			System.out.println("Training exists "); // test to remove
+			//System.out.println("Training exists "); // test to remove
 
 			training = trainingService.getTodaysTraining(username, weekDay);
 
