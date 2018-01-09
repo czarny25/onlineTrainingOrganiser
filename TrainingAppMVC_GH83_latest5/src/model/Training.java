@@ -84,7 +84,7 @@ public class Training {
 
 	public void setUserName(User user) {
 		String userName = user.getUserName();
-		System.out.println("User is set " + userName);
+		//System.out.println("User is set " + userName);
 		this.userName = userName;
 	}
 	

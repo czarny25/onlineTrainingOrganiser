@@ -38,8 +38,7 @@
 		setExercises(training);
 		setWeekDays(training);
 
-		//alert("ListOfExercesesNames length " + ListOfExercesesNames.length);
-
+		
 		// test pobranego treningu
 		//alert("Training " + training.trainingName);			
 		//alert("Day week " + training.weekDay);
