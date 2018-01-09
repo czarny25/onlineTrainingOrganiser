@@ -28,7 +28,7 @@
 
 								<td><c:out value="${training.trainingName}"></c:out></td>
 								<td><a
-									href="${pageContext.request.contextPath}/presentTraining?trainingName=${training.trainingName} ">Show</a>
+									href="${pageContext.request.contextPath}/presentExampleTraining?trainingName=${training.trainingName} ">Show</a>
 								</td>
 								
 							</tr>

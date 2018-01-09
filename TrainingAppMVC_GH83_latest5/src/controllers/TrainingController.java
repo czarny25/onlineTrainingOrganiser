@@ -144,6 +144,76 @@ public class TrainingController {
 		return "showPublicTrainings";
 	}
 
+	@RequestMapping(value = "/presentExampleTraining", method = RequestMethod.GET)
+	public String presentExampleTraining(Model model, String trainingName ) {
+		
+		System.out.println("presentExampleTraining start ");
+		
+		String username = "show";
+		
+		User user = new User();
+		user.setUserName(username);
+		
+		Training training = new Training();
+		// extraction from database
+		training = trainingService.presentTraining(username, trainingName);
+		training.setUserName(user);
+		
+		// list of exercise names for update
+		List<String> exeNames = trainingService.getAllExercisesNames();
+		//System.out.println("exerciseNames " + exeNames.toString());// test
+		
+		
+		// presentation to view TEST TO REMOVE
+//		System.out.println();
+//		System.out.println("Reading ");
+//		System.out.println("Name of training " + training.getTrainingName());
+//		System.out.println("Day of the week " + training.getWeekDay());
+//		System.out.println("Name of user " + training.getUserName());
+//		
+//		for (Exercise e : training.getExercises()) {
+//			System.out.println(" " + e.getNameOfExercise());
+//			for (Set s : e.getSets()) {
+//				System.out.println("  " + s.getSetNo() + ". " + s.getReps() + ". " + s.getWeight());
+//			}
+//		}
+		/// end of presentation
+		
+		
+		
+		//Save copy is instantiated
+		safeCopy = training;
+		
+		// presentation to view
+		ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
+		String json = "";
+		try {
+			json = ow.writeValueAsString(training);
+		} catch (JsonProcessingException e1) {
+			e1.printStackTrace();
+		}
+
+		String names = "";
+		try {
+			names = ow.writeValueAsString(exeNames);
+		} catch (JsonProcessingException e1) {
+			e1.printStackTrace();
+		}
+				
+		model.addAttribute("training", training);
+		model.addAttribute("json", json);
+		model.addAttribute("names", names);
+		
+		//System.out.println(" Presented ");
+		
+		return "showTraining";
+	}
+	
+	
+	
+	
+	
+	
 	
 	
 	

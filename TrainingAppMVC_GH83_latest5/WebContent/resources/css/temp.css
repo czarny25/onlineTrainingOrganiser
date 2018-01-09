@@ -1618,10 +1618,29 @@ h1, h2, h3, h4 {
 	text-align: center;
 }
 
+.errorPage{	
+	min-height: 200px;
+	background: rgba(15, 15, 15, 0.7);	
+	margin: 40px 30px;
+}
+.errorPage h1{
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 25px;
+}
+.errorPage .btn{
+	text-align: center;
+	background: red;
+	width: 50%;
+	margin: 10%  25% ;
+	margin-top: 0px;
+	font-size: 20px;
+}
+
 
 @media screen and (min-width: 766px) {
 
-	.accessDenied{	
+	.accessDenied, .errorPage{	
 		min-height: 200px;
 		background: rgba(15, 15, 15, 0.7);	
 		margin: 300px 300px;
@@ -1629,7 +1648,31 @@ h1, h2, h3, h4 {
 	.accessDenied h1{
 		text-align: center;
 	}
-
+ 
+ 	.errorPage{	
+		min-height: 200px;
+		background: rgba(15, 15, 15, 0.7);	
+		margin: 50px 40px;
+	}
+ 
+ 	.errorPage h1{
+		text-align: center;
+		font-size: 40px;
+	}
+	.aboutText{
+		padding-bottom: 50px;
+	}
+	
+	
+	.errorPage .btn{
+		text-align: center;
+		background: red;
+		width: 50%;
+		margin: 10%  25% ;
+		margin-top: 0px;
+		font-size: 30px;
+	}
+	
 }
 
 
