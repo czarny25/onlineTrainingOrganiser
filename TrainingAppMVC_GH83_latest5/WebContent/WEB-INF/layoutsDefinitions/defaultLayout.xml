@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+       
+	<tiles-definitions>
+		<definition name="defaultBase" template="/WEB-INF/layoutsTemplates/defaultTemplate.jsp">
+			<put-attribute name="script" value=""></put-attribute>
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/body.jsp"></put-attribute>
+			<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="welcomePage" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/welcomePage.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="guestPage" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/guestPage.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="showTodaysTraining" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/showTodaysTraining.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="showUsersTrainings" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/showUsersTrainings.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="showAllTrainings" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/showAllTrainings.jsp"></put-attribute>
+		</definition>
+		
+		
+		<definition name="logIn" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/logIn.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="logOut" extends="defaultBase">
+			<put-attribute name="title" value="Log Out"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/logOut.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="createNewAccount" extends="defaultBase">
+			<put-attribute name="script" value="/WEB-INF/tiles/createAccountScript.jsp"></put-attribute>
+			<put-attribute name="title" value="Register"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/createNewAccount.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="accountCreated" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/accountCreated.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="accessDenied" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/accessDenied.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="adminPage" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/adminPage.jsp"></put-attribute>
+		</definition>
+		
+		<definition name="showUsers" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/showUsers.jsp"></put-attribute>
+		</definition>		
+		
+		<definition name="homePage" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/homePage.jsp"></put-attribute>
+		</definition>
+
+		<definition name="errorPage" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/errorPage.jsp"></put-attribute>
+		</definition>	
+		
+		<definition name="createTraining" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/createTraining.jsp"></put-attribute>
+		</definition>	
+		
+		<definition name="showTraining" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/showTraining.jsp"></put-attribute>
+		</definition>	
+		
+		<definition name="trainingCreated" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/trainingCreated.jsp"></put-attribute>
+		</definition>	
+		
+		<definition name="showPublicTrainings" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/showPublicTrainings.jsp"></put-attribute>
+		</definition>	
+		
+		<definition name="noTrainingToday" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/noTrainingToday.jsp"></put-attribute>
+		</definition>
+
+		<definition name="trainingBooked" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/trainingBooked.jsp"></put-attribute>
+		</definition>
+
+		<definition name="createUser" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/createUser.jsp"></put-attribute>
+		</definition>
+
+		<definition name="start" extends="defaultBase">
+			<put-attribute name="title" value="Log in"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/start.jsp"></put-attribute>
+		</definition>
+
+		<definition name="about" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/about.jsp"></put-attribute>
+		</definition>
+
+		<definition name="contact" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/contact.jsp"></put-attribute>
+		</definition>
+
+		
+		<definition name="services" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/services.jsp"></put-attribute>
+		</definition>
+
+
+		<definition name="loadTraining" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/loadTraining.jsp"></put-attribute>
+		</definition>
+
+		<definition name="trainingLoaded" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/trainingLoaded.jsp"></put-attribute>
+		</definition>
+
+
+		<definition name="presentTraining" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/presentTraining.jsp"></put-attribute>
+		</definition>
+
+		<definition name="trainingDeleted" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/trainingDeleted.jsp"></put-attribute>
+		</definition>
+
+		<definition name="userLoggedOut" extends="defaultBase">
+			<put-attribute name="title" value="Training homepage"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/tiles/userLoggedOut.jsp"></put-attribute>
+		</definition>
+
+	</tiles-definitions>

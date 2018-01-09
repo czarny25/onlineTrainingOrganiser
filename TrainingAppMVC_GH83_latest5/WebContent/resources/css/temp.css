@@ -1,0 +1,1659 @@
+@font-face{
+	font-family: "MyFonts";
+	scr: url("../css/fonts/TitilliumWeb-Light.ttf") ;
+	
+}
+
+
+body {
+	background-image: url(../images/foto2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: rgb(255, 255, 255);
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+input, button{	
+	color: black;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.error{
+	font-size: 12px;
+	color: red;
+}
+@media screen and (min-width: 766px) {
+	
+	.error{
+		font-size: 20px;
+		
+	}
+}
+
+
+
+/* ------------------------- footer styles --------------------------------------- */
+
+.footer {
+	background: #1a1a1a;
+	font-size: 12px;
+	color: rgb(255, 255, 255);	
+}
+
+.footer h4{
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+.contactDetails {
+	padding-top:30px;
+	background: none;
+	text-align: left;
+}
+.getSocial {
+	padding-top:30px;
+	background: none;
+	text-align: right;
+	
+}
+.getSocial img{	
+	max-width: 30px;
+}
+
+.copyrights {
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align: center;
+}
+
+
+@media screen and (min-width: 766px) { 
+	
+	.footer {
+		font-size: 13px;
+		padding-bottom: 40px;
+	}	
+	.footer h4{
+		font-size: 20px;
+	}	
+	.contactDetails {
+		padding: 20px;
+		text-align: center;
+		}
+	.getSocial {
+		padding: 20px;
+		text-align: center;	
+			
+	}
+	.getSocial img{
+		max-width: 35px;
+	}	
+	.copyrights {	
+		text-align: center;
+		padding-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 1266px) { 
+	
+	.footer {
+		font-size: 15px;
+	}	
+	.footer h4{
+		font-size: 23px;
+	}	
+	.contactDetails {
+		padding: 40px;
+		text-align: center;
+		padding-bottom: 20px;
+		}
+	.getSocial {
+		padding: 40px;
+		text-align: center;	
+		padding-bottom: 20px;	
+	}
+	.getSocial img{
+		max-width: 35px;
+	}	
+	.copyrights {	
+		text-align: center;
+		padding-bottom: 40px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------- navigation styles -----------------------------------------*/
+
+
+.navbar{
+	color: rgb(255, 255, 255);	
+	margin-bottom :10px;
+	padding-top: :10px;
+	
+}
+
+.gymLogo img {
+	max-height: 80px;
+	width: 120px;
+}
+
+.navbar-toggle{
+	margin-top: 23px;
+	border: none;
+}
+
+
+.navbar-nav{
+	font-size: 18px;		
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;	
+}
+
+.navbar-inverse{
+	background: transparent;
+}
+
+
+
+.navbar-inverse .navbar-nav{
+	background-color: #1a1a1a;
+}
+
+.navbar-inverse .navbar-nav :hover{
+	background-color: black;
+}
+
+.navbar-inverse .navbar-nav  li  a{		
+	color: rgb(255, 255, 255);
+}
+
+.navbar-inverse .navbar-nav li a:hover{
+		color: rgba(255, 153, 0, 0.9);
+		background-color: transparent;
+		
+	}
+
+.navbar-inverse .btn{	
+	background-color: rgba(255, 153, 0, 0.9);
+	border-color: rgba(255, 153, 0, 0.9);
+	color: white;
+	
+}
+
+
+@media screen and (min-width: 766px) { 
+	
+	
+	
+	.gymLogo img {
+		max-height: 120px;
+		width: 240px;
+	}
+	
+	.navbar-nav{
+		font-size: 20px;
+		margin-top: 30px;
+		float: right;
+		
+		
+	}
+	
+	
+	.navbar-nav li{
+		padding-left: 12px;
+		padding-right: 10px;
+		color: rgb(255, 255, 255);
+		background-color: transparent;
+	}
+	
+	.navbar-inverse .navbar-nav :hover{
+		background-color: transparent;
+	}
+	
+	
+	.navbar-inverse .navbar-nav  .active  a {
+		color: pink;
+		background-color: transparent;
+		
+	}
+	
+	.navbar-inverse .navbar-nav li a:hover{
+		color: rgba(255, 153, 0, 0.9);
+		background-color: transparent;
+		
+	}
+	
+	.navbar-inverse .navbar-nav{
+		background-color:transparent;
+	}
+	
+	.navbar-inverse .navbar-nav :hover{
+		background-color: transparent;
+	}
+	.navbar-collapse{
+		background-color:transparent;
+		border-color: transparent;
+	}
+	
+	.btn{	
+		font-size: 19px;
+		padding-bottom: 2px;
+		padding-top: 1px;
+	}
+	
+	.navbar-inverse .btn{	
+		background-color: rgba(255, 153, 0, 0.6);
+		border-color: rgba(255, 153, 0, 0.6);
+		color: white;
+		
+	}
+
+	
+	.navbar-inverse .btn :hover{	
+		background-color: rgba(255, 153, 0, 0.9);
+		border-color: rgba(255, 153, 0, 0.9);
+		color: black;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- maincontent style ------------------------------------------- */
+
+
+.mainContent{
+	margin: 0px;	
+	margin-top :80px;
+	background: rgba(15, 15, 15, 0.8);
+	background-color:transparent;
+}
+
+@media screen and (min-width: 766px) { 
+	
+	.mainContent{		
+		margin-top : 120px;
+		margin-bottom: 80px
+	}
+	
+}
+
+
+
+/* ---------------------------------------- welcomePage styles ------------------------------------------ */
+
+.welcomePage{
+	
+}
+
+.top {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color:transparent;
+	text-align: center;
+	
+	
+}
+
+.top h1{	
+	font-size: 25px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.bottom{
+	padding: 30px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background-color:transparent;
+	text-align: center;
+	background: rgba(255, 153, 0, 0.7);
+	font-size: 18px;
+	
+}
+.bottom a{
+	color: black;
+}
+
+
+@media screen and (min-width: 766px) { 
+	
+	.top {
+		padding-top: 90px;
+		padding-bottom: 60px;
+		background-color:transparent;
+		text-align: center;
+	}	
+	.top h1{	
+		font-size: 55px;	
+	}
+	.bottom{		
+		padding-top: 70px;
+		padding-bottom: 70px;
+		background-color:transparent;
+		text-align: center;
+		background: rgba(255, 153, 0, 0.7);
+		font-size: 25px;		
+	}	
+}
+
+
+
+
+/* ---------------------------- aboutPage styles ---------------------------------------- */
+
+	.aboutPage{
+		background: rgba(15, 15, 15, 0.6);
+	}
+
+	.aboutText {
+		padding: 10px;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		background: transparent;
+		text-align: center;
+	}
+
+	.aboutText h1{	
+		font-size: 30px;	
+	}
+
+	.aboutFeatures {		
+		padding-bottom: 25px;
+		padding-top: 0px;
+	}
+
+	.featuresTitle {	
+		text-align: center;
+		font-size: 30px;
+		padding: 0px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	
+	.featuresList {
+		padding: 0px;
+		margin: 0px 10px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		background-color : rgba(255, 153, 0, 0.6);
+		
+	}
+	.aboutlistItem {
+		padding-left: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;	 	
+	 	border: none;
+	 	font-size: 15px;
+	 	margin: 0px;
+	 	color: black;
+	 	background: transparent;
+	}
+
+	.registerHere {
+		padding: 25px;
+		
+		padding-bottom: 15px;
+		text-align: center;
+		background-color : rgba(255, 153, 0, 0.6);
+	}
+	
+	.registerHere a{
+		font-size: 25px;
+		color: black;
+	}
+
+
+
+@media screen and (min-width: 766px) { 
+	
+	
+	
+	.aboutText {
+		padding: 190px  0px;
+		padding-top: 90px;
+		padding-bottom: 100px;
+		text-align: left;		
+		background: transparent;
+	}	
+	.aboutText h1{	
+		font-size: 55px;	
+	}
+	.aboutText p{	
+		font-size: 24px;	
+	}
+	
+	.aboutFeatures {		
+		padding-bottom: 65px;
+		padding-top: 25px;
+		margin-bottom: 30px
+	}
+	
+	.aboutFeatures h1{	
+		font-size: 45px;
+		text-align: left;
+		padding-left: 0px;	
+	}
+	.aboutlistItem {
+		text-align: left;
+		padding: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		
+	}	
+	
+	.featuresList {
+		margin: 0px 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		
+	}
+	
+	
+	.list-group-item {
+		padding-left: 25px;
+		padding-top: 15px;
+		padding-bottom: 15px;	 	
+	 	border: none;
+	 	font-size: 25px;
+	 	
+	}
+	
+	
+	.registerHere {
+		padding: 30px;
+		text-align: center;
+		
+	}
+	
+	.registerHere a{
+		font-size: 55px;
+		color: black;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------- contact-form styles --------------------------------------- */
+
+
+.contact-form{
+		
+		background-color:transparent;
+		margin-top: 20px;
+		background: rgba(15, 15, 15, 0.6);
+		
+	}
+	
+	#contact-form-title {	
+		
+		text-align: center;
+		font-size: 25px;
+		margin-top: 20px;
+		padding: 15px;
+	}
+	
+	#contact-form-title h1{	
+		margin-top: 10px;
+	}
+	
+	
+	
+	#contact-form-fields {
+		padding: 15px;
+		
+		margin-bottom: 20px;
+	}
+
+	.btn-send{
+		background-color : rgba(255, 153, 0, 0.6);
+	}
+
+	.btn-send :hover{
+		background-color : white;
+	}
+	
+	.text-muted{
+		color : rgba(255, 153, 0, 0.6);
+	}
+
+
+@media screen and (min-width: 766px) { 
+	
+	
+	
+	.contact-form{
+		margin-top: 80px;
+		margin-bottom: 60px;
+	}
+	
+	#contact-form-title {	
+		
+		text-align: center;
+		font-size: 25px;
+		margin-top: 20px;
+		padding: 15px;
+	}
+	
+	#contact-form-title h1{	
+		margin-top: 10px;
+	}
+	
+	
+	
+	#contact-form-fields {
+		padding: 15px;
+		margin-bottom: 20px;
+	}
+
+
+}
+
+
+
+
+
+
+/* --------------------------------------- login-form styles -------------------------------------------- */
+
+
+	.logInFormContainer{
+		background-color : transparent;
+		max-width: 380px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;		
+	}
+
+	.login-title{
+		font-size: 25px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;		
+	}
+
+	.logInFormBox{
+	    margin-top: 40px;
+	    margin-bottom: 40px;
+		background: rgba(15, 15, 15, 0.7);		
+		text-align: left;
+		padding: 20px 20px;
+	}
+
+	.form-signin {
+		margin: 45px;	   
+	    padding: 0px;
+	    margin: 0 auto;	   
+	}
+
+	.form-signin input
+	{
+		
+		width: 100%;
+	    margin-top: 10px;
+	   
+	    font-size: 15px;
+	}
+	
+	.form-signin .btn{
+		 margin-bottom: 10px;
+		 margin-top: 10px;
+		font-size: 18px;
+		padding: 5px;
+		background : rgba(255, 153, 0, 0.6);
+	}
+
+	.new-account a{
+		color: rgba(255, 153, 0, 0.6);		
+	}
+
+
+
+
+	.createAccountFormBox{
+		margin-top: 40px;
+		padding-top: 5px;
+	    margin-bottom: 0px;
+		background: rgba(15, 15, 15, 0.7);		
+		
+	}
+
+
+	.form-createAccount{	    
+	    margin-bottom: 40px;			
+		text-align: left;		
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+	}
+
+	.create-title{
+		font-size: 25px;
+		padding: 0px;
+	}
+
+
+	.form-createAccount input{		
+		width: 100%;
+	    margin-top: 10px;	   
+	    font-size: 15px;
+	}
+	
+	.form-createAccount .btn{
+		margin-bottom: 10px;
+		margin-top: 10px;
+		font-size: 18px;
+		padding: 5px;
+		background : rgba(255, 153, 0, 0.6);
+	}
+
+
+
+
+
+
+@media screen and (min-width: 766px) { 
+
+	.login-title{
+		font-size: 30px;
+		padding-top: 20px;
+	}	
+	
+	.logInFormContainer{
+		background-color : transparent;
+		max-width: 380px;
+		
+	}
+	
+	
+	.logInFormBox{
+	    margin-top: 100px;
+	    margin-bottom: 40px;
+		background: rgba(15, 15, 15, 0.7);
+		max-width: 360px;
+		text-align: left;
+		min-height: 310px;
+		padding: 20px 10px;
+	}
+	
+	.form-signin {
+	    max-width: 320px;
+	    padding: 20px;
+	    background: transparent;
+	   	padding-bottom: 0px;
+	   
+	}
+	
+
+	
+	.form-signin input
+	{
+		 
+		  width: 100%;
+		  font-size: 15px;
+	}
+	
+	.form-signin .btn{
+		
+		width: 100%;
+		font-size: 18px;
+		
+	}
+
+
+	.checkbox {		
+		margin: 15px;
+		margin-bottom: 10px;
+		padding: 10px;
+		padding-bottom: 0px
+	}
+
+	.need-help{
+	    margin-top: 10px;
+	    padding: 10px;
+	}
+	
+	.new-account{	   
+	    margin: 15px;
+	    padding: 10px;
+	    padding-top: 0px;
+	    padding-bottom: 20px
+	}
+    .error{
+    	color: red;
+    	font-size: 10px;
+    	
+    }
+	.logInFormBox .error{
+    	color: red;
+    	font-size: 15px;
+    	margin-left: 25px;
+    }
+    
+    .create-title{
+		font-size: 30px;
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+    
+	.createAccountFormBox{
+		margin-top: 100px;
+	    margin-bottom: 0px;
+		background: rgba(15, 15, 15, 0.7);
+		max-width: 360px;
+		text-align: left;
+		min-height: 310px;
+		padding-bottom: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+/* -------------------- show training styles ------------------------------- */
+
+
+	.wholeForm{		
+		margin-left: 0%;
+		margin-right: 0%;
+		
+	}
+	
+	.form-control{
+		color: black;
+	}
+	
+    
+
+    .trainingTitle {
+        padding-top: 20px;
+        text-align: center;
+	}
+
+	.trainingTitle h1{		
+        font-size:  20px;
+        color: rgb(255, 255, 255);
+        background: black;
+        padding: 10px;          
+	}
+
+	 @media screen and (min-width: 992px) { 
+	 
+		 .trainingTitle {
+	        padding-top: 50px;
+	        
+		}
+	 	.trainingTitle h1{		
+	        font-size:  35px;
+	        color: rgb(255, 255, 255);
+	        background: rgba(15, 15, 15, 0.6);
+	        	        
+		}	
+		
+    
+	 }
+
+
+
+    .btn{
+    	border-color: transparent;
+    }
+
+
+
+
+
+
+
+
+    #updateHeader{        
+        padding-top: 10px;        
+    }
+    
+    
+    #trainingName{
+         margin: 2%  1% ;
+         width: 98%;
+         color: black;
+	}	
+    
+    #weekDay{	
+    	color: black;	
+		font-size: 15px;
+		margin: 2%  1% ;
+		margin-right: 3%; 
+        width: 65%;
+        padding-bottom: 5px;
+	}	
+	
+	.btnSet{
+        width: 30%;
+		margin-top: 2%;
+		background: white;
+	}
+	
+
+    @media screen and (min-width: 768px) { 
+		
+	
+        #trainingName{                    
+            width: 49.6%;
+            margin: 1%  8.333% ;
+            margin-right: 1.8333%;
+            font-size: 22px;
+            margin-bottom: 0%;
+        }
+            
+        #weekDay{
+        	font-size: 18px;
+            width: 20%;                       
+            margin-top: 1%;
+            margin-right: 1.8333%;
+            margin-left: 0%;
+            padding-top: 0px;
+	   }
+       
+        .btnSet{
+        	font-size: 20px;
+            width: 10%;
+		    margin-top: 1%;
+	   }        
+    }
+
+	
+
+	#newExerciseNameInput{        
+        background: transparent;
+	}
+
+	#newExeName{
+            width: 98%;
+            margin:  2% 1%; 
+            font-size: 15px;
+            color: black;            
+        }  
+    
+    .btnNewExeName{ 
+    	font-size: 15px;
+        background: white; 
+        width: 98%;
+        margin:  2% 1%;      
+    }
+    
+    @media screen and (min-width: 768px) { 
+         #newExeName{
+            width: 50%;
+            margin-right: 1.8333%;  
+            font-size: 22px;              
+        }        
+        
+        .btnNewExeName{           
+            width: 30%;
+            font-size: 20px;   
+        }
+    }
+	
+    @media screen and (min-width: 768px) { 
+        #newExeName{
+            width: 50%;
+            margin: 1%  8.333% ;
+            margin-right: 1.8333%;
+            margin-top: 0.5%  ; 
+            margin-bottom: 1.5%  ;
+        }
+        .btnNewExeName{            	
+            width: 30%; 
+            margin-top: 0.5%  ; 
+            margin-bottom: 1.5%  ;
+              
+                       
+        }
+    }
+
+
+
+	#displayHeader{	        
+        font-size: 15px;
+	}
+
+	#trainingNameDisplayed{
+		 padding-top: 5px;
+	     padding-bottom: 5px;
+         color: rgb(255, 255, 255);
+         background: rgba(15, 15, 15, 0.6);
+	}
+	#weekDayDisplayed{
+		padding-top: 5px;
+	    padding-bottom: 2px; 
+        margin-top: 10px;
+        margin-left: 8.3333%; 
+		margin-right: 3.3333%; 
+        width: 50%;
+        color: rgb(255, 255, 255);
+        background: rgba(15, 15, 15, 0.6);
+	}	
+		
+	.btnUpdate{		
+      	font-size: 15px;		
+		margin-top: 10px;
+		width: 30%;
+	}
+	
+
+    @media screen and (min-width: 992px) { 
+		
+		#displayHeader{	
+	        font-size: 22px;
+		}
+        #trainingNameDisplayed{        	            
+            width: 51%;
+            margin-right: 1.8333%; 
+            font-size: 25px;
+        }
+            
+       #weekDayDisplayed{
+       		padding-top: 5px;
+	     	padding-bottom: 5px;
+            width: 19%;                       
+            margin-top: 0px;
+            margin-right: 1.8333%; 
+            margin-left: 0%;
+	   }        
+        .btnUpdate{
+            width: 9.667%;
+		    margin-top: 3px;
+		    font-size: 18px;
+	   }        
+    }
+
+	
+	
+	
+	
+	
+	.bottomButtons{		
+        padding-top: 10px;
+        padding-bottom: 10px;
+	}
+    .editTraining{    	
+        width: 50%; 
+        background: green; 
+        padding: 3px 6px;
+        background: transparent;        
+    }
+    .saveTraining{
+        width: 50%; 
+        background: blue; 
+        padding: 3px 6px;
+        background: transparent;      
+    }
+    
+    
+    .editTrainingButton{
+    	padding: 3px 6px;
+    	margin: 10px 0px;
+        width: 100%; 
+        background: white;
+        text-align: center;       
+    }
+    .saveTrainingButton{
+    	padding: 3px 6px;
+    	margin: 10px 0px;
+        width: 100%; 
+        background: white; 
+        text-align: center;      
+    }
+    
+    
+    
+
+    @media screen and (min-width: 768px) { 
+	
+        .bottomButtons{		
+	        padding-top: 10px;
+	        padding-bottom: 10px;
+		}
+	    .editTraining{
+	    	margin-left: 8.3333%;         
+	        margin-right: 3.3333%;
+	        width: 40%; 
+	        background: green;
+	        background: transparent; 
+	        padding: 0px 6px;     
+	    }
+	    .saveTraining{
+	        width: 40%; 
+	        background: blue; 
+	        background: transparent; 
+	        padding: 0px 6px;     
+	    }
+    }
+
+   
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	.goBack{		
+        padding: 0px;        
+	}
+	
+	.goBack a{
+	        color: rgb(255, 255, 255);
+	        font-weight: bold;
+	}
+
+	@media screen and (min-width: 992px) { 
+        
+        .goBack{		
+	        padding-top: 10px;
+	        font-size: 20px;
+	        color: rgb(255, 255, 255);
+		}
+		.goBack a{
+	        color: rgb(255, 255, 255);
+		}
+    }
+
+
+
+
+
+
+
+	#presentTraining{			
+		font-size: 15px;
+		background: transparent;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+		
+	#presentTraining p{		
+		font-size: 15px;
+		text-decoration: underline;
+		margin-top: 7px;
+		margin-bottom: 7px;	
+		padding-top: 5px;
+		padding-bottom: 5px;		
+		background: rgba(15, 15, 15, 0.7);
+		
+		
+	}
+	#presentTraining table{		
+		border-right-width: 1px;
+	}	
+
+
+	#presentTraining  td{				
+		font-size: 15px;		
+		background-color: rgba(15, 15, 15, 0.7);
+		padding: 15px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		text-align: center;	
+	}
+
+	
+	
+	@media screen and (min-width:  992px) { 
+		
+		#presentTraining{			
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+		
+		#presentTraining p{		
+			font-size: 22px;
+			text-decoration: underline;
+			margin-top: 7px;
+			margin-bottom: 7px;	
+			padding-top: 10px;
+			padding-bottom: 10px;					
+			background: rgba(15, 15, 15, 0.7);
+			
+			
+		}
+		#presentTraining  td{				
+			font-size: 20px;		
+			background-color: rgba(15, 15, 15, 0.7);
+			padding: 15px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;	
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#presentTable{
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	
+	.createTrain{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	
+	.createTrain input{
+		color: black;
+	}
+	
+	.tableExe{
+	    font-size: 12px;
+	    font-family: arial, sans-serif;
+	    background-color: rgba(15, 15, 15, 0.7);
+	}
+	
+	.tableExe tr{
+		padding: 0px;
+	}
+	
+	#prt1{		
+		padding-right: 10px;
+		padding-left: 10px;
+		width: 5%;
+		text-align: left;	
+	}
+	#prt2{
+		
+		padding-right: 5px;
+	}
+	
+	#prt3{
+		width: 2%;
+		padding-right: 5px;
+	
+	}
+	#prt4{
+		width: 3%;
+		padding-right: 3px;
+	}
+	#prt5{
+		
+		color: black;
+		padding-right: 5px;
+	}
+	#prt6{
+		
+		color: black;
+		padding-right: 5px;
+	}
+	#prt7{
+		width: 5%;
+	}
+	
+	
+	
+	.tableExe td, th {
+	    border: none;
+	    text-align: center;	    
+	    padding-top: 5px;
+	    padding-bottom: 5px;
+	    margin: 0px;
+	}
+	
+	
+	.Del{    
+	    padding: 3px 6px;
+	    background: white;
+	     
+	}
+	.Add {    
+	    padding: 3px 5px;
+	    background: white;
+	   
+	}
+
+	.tableExe select{
+	    font-size: 12px;
+	    padding: 2px;
+	    height: 25px;
+	    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+
+	
+
+@media screen and (min-width: 766px) {
+    
+    .tableExe{
+	    font-size: 12px;
+	    font-family: arial, sans-serif;
+	    
+	}
+	
+	
+    
+    .tableExe{
+        font-size: 15px;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+      
+    }
+
+    #prt1{
+		font-size: 20px;
+		font-weight:bold;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	
+	#prt7{
+		font-size: 18px;
+		font-weight:bold;		
+	}
+	
+	#prt2{
+		width: 60%;
+		padding-right: 5px;
+		
+	}
+	#prt2 select{
+		width: 90%;		
+		
+	}
+	
+	#prt3{
+		width: 5%;
+		padding-right: 5px;
+	
+	}
+	#prt4{
+		
+		width: 10%;
+	}
+	
+	#prt5{
+		width: 20%;
+		color: black;
+		padding-right: 5px;
+	}
+	#prt6{
+		width: 20%;
+		color: black;
+		padding-right: 5px;	
+	}
+	
+	
+	
+	.tableExe td, th {
+	    border: none;
+	    text-align: center;	    
+	    padding-top:  10px;
+	    padding-bottom: 10px;
+	    margin: 0px;
+	    
+	}
+	
+	
+		
+	 .Del{    
+	    padding: 3px 6px;
+	    background: white;
+	    width: 100%;	     
+	}
+	.Add {    
+	    padding: 3px 5px;
+	    background: white;
+	}
+
+	.tableExe select{
+	    font-size: 20px;
+	    padding: 2px;
+	    height: 35px;
+	    color: black;
+	    margin-right: 20px;
+	    width: 80%;
+	    text-align: center;
+	}  
+	
+	
+	.createTrain{
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	
+	
+	  
+}
+	
+	
+
+
+
+
+
+
+
+	
+
+/* -------------------- homePage styles ------------------------------- */	
+
+
+
+.homePage{
+	margin-top: 20px;
+	padding-top: 20px;
+	background: rgba(15, 15, 15, 0.7);
+	font-size: 20px;	
+	
+}
+
+.homePage h2{	
+	font-size: 25px;
+}		
+
+.guestPage{
+	margin-top: 20px;
+	padding-top: 20px;
+	background: rgba(15, 15, 15, 0.7);
+	font-size: 20px;	
+	
+}
+
+.guestPage h2{	
+	font-size: 25px;
+}
+
+
+.listItems{
+	background-color : rgba(255, 153, 0, 0.6);
+}
+		
+.list-group-item{	
+	background-color : transparent;
+	border: none;
+}
+
+.list-group-item a{		
+	font-size: 18px;	
+	color: black;
+}	
+	
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;	
+}	
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}		
+.noTrainToday a{
+	color:rgba(255, 153, 0, 0.6);
+}	
+
+
+
+@media screen and (min-width: 766px) {
+			
+	.homePage{
+		margin-top: 200px;
+		margin-bottom: 200px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background: rgba(15, 15, 15, 0.7);		
+	}
+	
+	.homePage h2{	
+		font-size: 35px;
+	}		
+		
+	.guestPage{
+		margin-top: 250px;
+		margin-bottom: 100px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background: rgba(15, 15, 15, 0.7);
+		
+	}
+	
+	.guestPage h2{	
+		font-size: 35px;	
+		
+	}		
+	
+	
+		
+	.list-group-item{	
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+		
+	
+	
+		
+	.list-group-item a{		
+		font-size: 25px;	
+		color: black;
+	}
+		
+		
+		
+		
+	.list-group-item:last-child {
+	    margin-bottom: 0;
+	    border-bottom-right-radius: 0px;
+	    border-bottom-left-radius: 0px;	
+	}	
+	.list-group-item:first-child {
+	    border-top-left-radius: 0px;
+	    border-top-right-radius: 0px;
+	}		
+	
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+/* -------------------- showUsersTrainings styles ------------------------------- */	
+	
+	
+	
+.showUsersTrainings , .showAllTrainings , .showPublicTrainings {
+	margin-top: 20px;
+	padding-top: 20px;
+	background: rgba(15, 15, 15, 0.7);	
+}
+.showUsersTrainings a {	
+	color: rgba(255, 153, 0, 0.6);
+}
+.showAllTrainings a {	
+	color: rgba(255, 153, 0, 0.6);
+}
+.showPublicTrainings a {	
+	color: rgba(255, 153, 0, 0.6);
+}
+
+
+#trainingListTable h2{
+	font-size: 25px;	
+}
+
+#trainingListTable{
+	font-size: 18px;
+	
+	
+}
+
+#trainingListTable th{
+	font-size: 18px;		
+	text-align: left;
+}
+
+.tdName {		
+	text-align: left;
+}
+
+.tdShow {		
+	text-align: left;
+}
+
+.tdDel {		
+	text-align: right;
+}
+
+#goBackLinks{
+	
+	margin-bottom: 20px;	
+}
+.table{
+	
+	margin-bottom: 0px;	
+}
+
+
+@media screen and (min-width: 766px) {
+	
+	
+	.showUsersTrainings , .showAllTrainings , .showPublicTrainings{
+		margin-top: 200px;
+		padding-top: 50px;		
+		font-family: "Josefin Slab" , sans-serif;
+		margin-bottom: 80px;
+	}	
+	.showPublicTrainings{
+		
+	}
+	
+	#trainingListTable{
+		font-size: 20px;
+		/*margin: 10px 10px;*/
+		
+	}
+	
+	#trainingListTable h2{
+		font-size: 35px;
+		margin-bottom: 30px;		
+	}
+	
+	
+	#trainingListTable th{
+		font-size: 25px;
+		/*margin: 10px 10px;*/	
+		text-align: left;
+	}
+	
+	#goBackLinks{
+	
+		margin: 20px 0px;
+	
+	}
+	
+	
+}
+
+
+
+
+
+.accessDenied{	
+	min-height: 200px;
+	background: rgba(15, 15, 15, 0.7);	
+	margin: 20px;
+}
+.accessDenied h1{
+	text-align: center;
+}
+
+
+@media screen and (min-width: 766px) {
+
+	.accessDenied{	
+		min-height: 200px;
+		background: rgba(15, 15, 15, 0.7);	
+		margin: 300px 300px;
+	}
+	.accessDenied h1{
+		text-align: center;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

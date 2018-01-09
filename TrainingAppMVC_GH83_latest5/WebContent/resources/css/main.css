@@ -1,0 +1,363 @@
+/* --------- Global styles ----------- */
+body {
+	font-family: sans-serif, calibri, candara, "segoe UI", Optima, Arial;
+	font-size: 19px;
+	color: rgb(226, 226, 226);
+	background: rgb(15, 15, 15);
+	background-image: url(../images/foto2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 1% 5% 1% 5%;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 1.66em
+	}
+	.main-text h1 {
+		text-align: center;
+		font-size: 60px;
+	}
+	.header {
+		
+	}
+}
+
+select, input, button {
+	color: black;
+}
+
+h1, h2, h3 {
+	font-family: Garamond, "Baskerville Old Face", "Times New Roman", serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.2656em;
+	margin-top: 0.4219em;
+	margin-bottom: 0;
+	color: rgb(172, 140, 71);
+}
+
+h2 {
+	font-size: 1.2em;
+	line-height: 1.1em;
+	margin: 0.4219em auto 0.4219em auto;
+}
+
+h3 {
+	font-size: 1.5263em;
+	font-weight: normal;
+	margin-top: 0.9310em;
+	margin-bottom: 0;
+}
+
+img {
+	width: 100%;
+}
+
+a:link {
+	color: rgb(172, 140, 71);
+}
+
+a:visited {
+	color: rgb(100, 81, 41);
+}
+
+a:hover {
+	color: rgb(224, 182, 90);
+}
+
+a:active {
+	color: rgb(252, 217, 142);
+}
+
+.body {
+	background: rgba(15, 15, 15, 0.8);
+	padding: 10px;
+	color: black;
+}
+
+/* --------- login styles ----------- */
+.loginDiv {
+	font-size: 15px;
+	background: rgba(67, 67, 67, 0.4);
+	color: rgb(180, 180, 180);
+	text-align: right;
+	padding: 3px;
+}
+
+.loginDiv a {
+	color: rgb(226, 226, 226);
+	text-decoration: none;
+	padding: 5px;
+	padding-right: 0px;
+}
+
+.loginDiv a:hover {
+	color: rgb(255, 255, 255);
+	transition: .5s color;
+	background: rgb(95, 94, 94);
+}
+
+@media screen and (min-width: 768px) {
+	.loginDiv {
+		font-size: 20px;
+		padding: 5px;
+	}
+}
+
+/* --------- logo styles ----------- */
+.gymLogo {
+	display: block;
+	margin: 0 auto;
+}
+
+.gymLogo img {
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+	.gymLogo {
+		float: left;
+		width: 250px;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	.gymLogo {
+		display: inline;
+		min-width: 250px;
+	}
+}
+
+/* --------- navi styles ----------- */
+.main-navigation ul {
+	padding-left: 0px;
+}
+
+.main-navigation li {
+	list-style: none;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.main-navigation a {
+	display: block;
+	padding: 15px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: rgba(67, 67, 67, 0.16);
+	color: rgb(180, 180, 180);
+}
+
+.main-navigation a:visited {
+	color: rgb(180, 180, 180);
+}
+
+.main-navigation a:hover {
+	color: rgb(255, 255, 255);
+	transition: .5s color;
+	background: rgba(59, 56, 56, 0.51);
+}
+
+.main-navigation a:active {
+	color: white;
+	background: red;
+}
+
+@media screen and (min-width: 768px) {
+	.main-navigation {
+		height: 250px;
+		border-top: 1px solid rgb(36, 36, 36);
+		border-bottom: 1px solid rgb(36, 36, 36);
+	}
+	.main-navigation ul {
+		margin-left: 250px;
+		margin-top: auto
+	}
+	.main-navigation li {
+		padding-right: 0px;
+		margin: 0px;
+	}
+}
+
+@media screen and (min-width: 1228px) {
+	.main-navigation {
+		height: 250px;
+		border-top: 1px solid rgb(36, 36, 36);
+		border-bottom: 1px solid rgb(36, 36, 36);
+		padding: 0;
+	}
+	.main-navigation ul {
+		margin-top: 170px;
+		margin: 100;
+		background: red;
+	}
+	.main-navigation li {
+		float: left;
+		width: 24%;
+		margin: auto;
+	}
+}
+
+/* --------- footer styles ----------- */
+.footer {
+	padding: 0px 0px;
+	font-size: 15px;
+	margin-bottom: 0px;
+	color: rgb(226, 226, 226);
+}
+
+.footer h4 {
+	text-transform: uppercase;
+}
+
+.footer p {
+	margin: 0;
+}
+
+.footer img {
+	width: 35px;
+}
+
+.footer .contactDetails {
+	float: left;
+	margin-left: 10px;
+}
+
+.footer .getSocial {
+	float: right;
+	margin-right: 10px;
+	text-align: center;
+}
+
+#copyrights {
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 130px;
+	padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+	.footer {
+		padding: 0px 0px;
+		font-size: 18px;
+	}
+	#copyrights {
+		text-align: center;
+		margin-left: 350px;
+		margin-right: 350px;
+		padding-top: 130px;
+		padding-bottom: 15px;
+	}
+}
+
+
+
+/* --------- main content styles ----------- */
+.mainContent {
+	font-family: sans-serif;
+	font-size: 12px;
+	color: rgb(226, 226, 226);
+	font-size: 17px;
+}
+
+#trainingHeader{	
+	padding: 5px;
+	font-size: 19px;
+}
+
+#trainingName{
+	width: 55%;	
+}
+#weekDay{
+	width: 18%;
+}
+
+#displayHeader button{
+	display: inline-block;
+}
+
+#trainingNameDisplayed{
+	width: 48%;
+	display: inline-block;
+}
+#weekDayDisplayed{
+	width: 18%;
+	display: inline-block;
+}
+
+
+
+
+#presentTable {
+	width: 100%;
+	padding: 0px;
+	font-size: 17px;
+} 
+
+#presentTable table{	
+	width: 100%;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+#presentTable tr{
+		
+	
+}
+
+#presentTable td{	
+	
+	
+}
+
+
+@media screen and (min-width: 768px) {
+	.mainContent {
+		font-family: sans-serif;
+		font-size: 22px;
+		padding: 40px;
+		padding-left: 40px;
+		color: rgb(226, 226, 226);
+		padding-right: 
+	}
+}
+
+
+
+
+
+
+
+/* --------- home page styles ----------- */
+.homePage {
+	padding: 50px;
+	padding-left: 10px;
+}
+
+@media screen and (min-width: 750px) {
+	.homePage {
+		padding: 40px;
+		padding-left: 100px;
+	}
+}
+
+#wholeForm {
+	color: rgb(226, 226, 226);
+}
+
+@media screen and (min-width: 750px) {
+	#wholeForm {
+		color: rgb(226, 226, 226);
+	}
+}
+
+/* --------- logIn page styles ----------- */
+
+/* --------- home page styles ----------- */

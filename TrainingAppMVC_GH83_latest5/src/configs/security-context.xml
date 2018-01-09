@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security 
+					    http://www.springframework.org/schema/security/spring-security-3.1.xsd
+						http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<security:authentication-manager>
+		<security:authentication-provider>
+			<security:jdbc-user-service data-source-ref="dataSource" id="jdbcData" />
+			<security:password-encoder ref="passwordEncoder"></security:password-encoder>
+		</security:authentication-provider>		
+	</security:authentication-manager>
+
+
+	<security:http use-expressions="true">
+		<security:intercept-url pattern="/adminPage"    	access="hasRole('ROLE_ADMIN')" />
+		<security:intercept-url pattern="/homePage"       access="isAuthenticated()" />		
+		<security:intercept-url pattern="/welcomePage"    	access="permitAll" />
+		<security:intercept-url pattern="/guestPage"      	access="permitAll" />
+		<security:intercept-url pattern="/logIn"          	access="permitAll" />
+		<security:intercept-url pattern="/logOut"          	access="permitAll" />
+		<security:intercept-url pattern="/createNewAccount" access="permitAll" requires-channel="http" />
+		<security:intercept-url pattern="/doCreateAccount" access="permitAll" />
+		<security:intercept-url pattern="/accountCreated" access="permitAll" />
+		<security:intercept-url pattern="/accessDenied"    	access="permitAll" />
+		
+		
+		<security:intercept-url pattern="/createUser"     access="isAuthenticated()" />
+		<security:intercept-url pattern="/doCreateUser"   access="isAuthenticated()" />
+		<security:intercept-url pattern="/userCreated"    access="isAuthenticated()" />
+		<security:intercept-url pattern="/"               access="permitAll" />
+		<security:intercept-url pattern="/static/**"      access="permitAll" />
+		
+		<security:intercept-url pattern="/showUsers"      access="permitAll" />
+		<security:intercept-url pattern="/createTraining" access="isAuthenticated()" />
+		
+		
+		
+		<security:form-login login-page="/logIn"
+			authentication-failure-url="/logIn?error=true"			
+			default-target-url="/homePage" />
+
+
+		<security:logout logout-success-url="/logOut" />
+
+		<security:access-denied-handler error-page="/accessDenied" />
+
+		<security:remember-me key="trainingAppKey" user-service-ref="jdbcData" />
+			
+	</security:http>
+	<security:global-method-security secured-annotations="enabled"></security:global-method-security>
+	
+	
+	<bean id="passwordEncoder"
+		class="org.springframework.security.crypto.password.StandardPasswordEncoder">
+	</bean>
+	
+	
+</beans>
+
