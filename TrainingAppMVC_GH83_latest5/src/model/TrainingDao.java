@@ -122,7 +122,7 @@ public class TrainingDao {
 	// this method will present full training to the user
 	public Training presentTraining(String username, String trainingName) {
 
-		System.out.println("requested trainig is " + trainingName);
+		System.out.println("requested trainig is " + trainingName + "username " + username);
 
 		// Training training = new Training();
 
@@ -130,6 +130,8 @@ public class TrainingDao {
 		parameter1.addValue("trainingName", trainingName);
 		parameter1.addValue("userName", username);
 
+		System.out.println("1 requested trainig is " + trainingName + "username " + username);
+		
 		Training training = database1.queryForObject(
 				"select * from training, users where training.userName=:userName"
 						+ " and users.userName=:userName and training.trainingName = :trainingName and users.enabled=true",
@@ -172,8 +174,13 @@ public class TrainingDao {
 		training.setTrainingName(trainingName);
 		// training.setWeekDay(weekDay);
 
+		System.out.println("2 requested trainig is " + trainingName + "username " + username);
+		
 		training.setExercises(exercises);
 		return training;
+		
+		
+		
 	}
 
 	

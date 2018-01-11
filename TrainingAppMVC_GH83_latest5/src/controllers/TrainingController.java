@@ -45,7 +45,7 @@ public class TrainingController {
 	
 	
 	
-	//////// this method will direct user straight to todays - completed
+	//////// this method will direct user to todays training - completed
 	
 	@RequestMapping("/showTodaysTraining")
 	public String showTraining(Model model, Principal principal) {
@@ -125,7 +125,6 @@ public class TrainingController {
 			return "noTrainingToday";
 		}
 	}
-
 	////////// end of todays training ////////////
 
 	
@@ -165,18 +164,18 @@ public class TrainingController {
 		
 		
 		// presentation to view TEST TO REMOVE
-//		System.out.println();
-//		System.out.println("Reading ");
-//		System.out.println("Name of training " + training.getTrainingName());
-//		System.out.println("Day of the week " + training.getWeekDay());
-//		System.out.println("Name of user " + training.getUserName());
-//		
-//		for (Exercise e : training.getExercises()) {
-//			System.out.println(" " + e.getNameOfExercise());
-//			for (Set s : e.getSets()) {
-//				System.out.println("  " + s.getSetNo() + ". " + s.getReps() + ". " + s.getWeight());
-//			}
-//		}
+		System.out.println();
+		System.out.println("Reading ");
+		System.out.println("Name of training " + training.getTrainingName());
+		System.out.println("Day of the week " + training.getWeekDay());
+		System.out.println("Name of user " + training.getUserName());
+		
+		for (Exercise e : training.getExercises()) {
+			System.out.println(" " + e.getNameOfExercise());
+			for (Set s : e.getSets()) {
+				System.out.println("  " + s.getSetNo() + ". " + s.getReps() + ". " + s.getWeight());
+			}
+		}
 		/// end of presentation
 		
 		
@@ -204,12 +203,12 @@ public class TrainingController {
 		model.addAttribute("json", json);
 		model.addAttribute("names", names);
 		
-		//System.out.println(" Presented ");
+		System.out.println(" Presented ");
 		
 		return "showTraining";
 	}
 	
-	
+	//////////////////////////////////////////////
 	
 	
 	
@@ -238,7 +237,7 @@ public class TrainingController {
 		model.addAttribute("trainings", trainings);
 		return "showUsersTrainings";
 	}
-
+	////////////////////////////////////////////////////////////////////////////
 	
 	
 	
@@ -248,7 +247,7 @@ public class TrainingController {
 	
 	
 	
-	////////////    This method will present list of all available training   /////////////////
+	////////////    This method will present list of all available training in application database  /////////////////
 	
 	@RequestMapping("/showAllTrainings")
 	public String showAllTrainings(Model model) {
@@ -260,7 +259,7 @@ public class TrainingController {
 		model.addAttribute("trainings", trainings);
 		return "showAllTrainings";
 	}
-
+	///////////////////////////////////////////////////////////////////////////////////////////
 	
 	
 	
@@ -269,7 +268,7 @@ public class TrainingController {
 	
 	
 	
-	////////////this method will present single training for use  ///////////////
+	////////////this method will present single training for use  ////////////////////////////
 
 	@RequestMapping(value = "/presentTraining", method = RequestMethod.GET)
 	public String presentTraining(Model model, String trainingName, Principal principal) {
@@ -343,7 +342,7 @@ public class TrainingController {
 		
 		return "showTraining";
 	}
-
+	//////////////////////////////////////////////////////////////////////////////////
 	
 	
 	
@@ -352,7 +351,7 @@ public class TrainingController {
 	
 	
 	
-	////////////this method will create single training for use  ///////////////
+	////////////this method will create single training for use  /////////////////////
 
 	@RequestMapping("/createTraining")
 	public String createTraining(Model model) {
@@ -428,14 +427,14 @@ public class TrainingController {
 		
 		return "showUsersTrainings";
 	}
-
+	/////////////////////////////////////////////////////////////////////////////////////
 	
 	
 	
 	
 	
 	
-	////////////this method will delete single training  ///////////////
+	////////////this method will delete single training  /////////////////////////////////
 	
 	@RequestMapping(value = "/deleteTraining", method = RequestMethod.GET)
 	public String deleteTraining(String trainingName, String weekDay, Principal principal) {
@@ -448,11 +447,11 @@ public class TrainingController {
 		
 		return "trainingDeleted";
 	}
+	///////////////////////////////////////////////////////////////////////////////////////
 	
 	
 	
-	
-	////////////this method will update single training  ///////////////
+	////////////this method will update single training  //////////////////////////////////
 	
 	@RequestMapping(value = "/doUpdate", method = RequestMethod.POST)
 	public String doUpdate(@RequestBody Training training, Principal principal, HttpServletRequest request) {
@@ -550,7 +549,7 @@ public class TrainingController {
 		return "showTraining";
 		
 	}
-	
+	//////////////////////////////////////////////////////////////////////////////////
 	
 	
 }

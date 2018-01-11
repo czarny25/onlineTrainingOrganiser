@@ -34,8 +34,9 @@ public class LoginController {
 	}
 	
 	
-	//////////// login stuff ///////////////////////////
 	
+	
+	//////////// login stuff ///////////////////////////	
 	
 	@RequestMapping(value="/logIn")
 	public String logIn(){
@@ -51,29 +52,15 @@ public class LoginController {
 	@RequestMapping(value="/logOut")
 	public String logOut(){		
 		return "logIn";
-	}
-	
+	}	
 	////////////////////////////////////////////////////
 	
 	
 	
 	
 	
-	@RequestMapping("/adminPage")
-	public String showAdminPage(Model model){		
-		
-		//throw new AccessDeniedException("Wrong");
-		
-		try {
-			return "adminPage";
-		} catch (AccessDeniedException e) {
-			return "accessDenied";
-		}
-	}
 	
-	
-////////////  account stuff ///////////////////////////
-
+	//////////// create account stuff ///////////////////////////
 	
 	@RequestMapping(value="/createNewAccount")
 	public String createAccount(Model model){
@@ -100,13 +87,27 @@ public class LoginController {
 		}
 			//System.out.println(user.toString());			
 			return "accountCreated";
+	}	
+	///////////////////////////////////////////////////////////////////////	
+	
+	
+	
+	
+	
+	
+	//////////// administrator stuff ///////////////////////////
+	
+	@RequestMapping("/adminPage")
+	public String showAdminPage(Model model){		
+		
+		//throw new AccessDeniedException("Wrong");
+		
+		try {
+			return "adminPage";
+		} catch (AccessDeniedException e) {
+			return "accessDenied";
+		}
 	}
-	
-	
-///////////////////////////////////////////////////////////////////////	
-	
-	
-	
 	
 	
 	@RequestMapping(value="/createUser")
@@ -139,23 +140,6 @@ public class LoginController {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	@RequestMapping("/showUsers")
 	public String showUsersPage(Model model){
 		
@@ -172,6 +156,8 @@ public class LoginController {
 		
 		return "showUsers";
 	}
+	
+	///////////////////////////////////////////////////////////
 	
 	
 	

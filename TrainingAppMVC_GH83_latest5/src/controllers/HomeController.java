@@ -37,12 +37,4 @@ public class HomeController {
 		return "contact";
 	}
 	
-//	@RequestMapping("/services")
-//	public String showServicesPage(Model model){
-//				
-//		return "services";
-//	}
-	
-	
-	
 }

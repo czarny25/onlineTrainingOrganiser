@@ -27,7 +27,6 @@ private TrainingDao trainingModel;
 	}	
 	
 	public Training getTodaysTraining(String userName, String weekDay){	
-//		System.out.println("biore training service");
 		return trainingModel.getTraining(userName, weekDay);		
 	}
 
@@ -49,7 +48,6 @@ private TrainingDao trainingModel;
 	
 
 	public List<Training> getUsersTrainings(String userName) {
-//		System.out.println("ServiceshowUsersTrainings on place");
 		return trainingModel.getUsersTrainings(userName);
 	}
 
